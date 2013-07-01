@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 #
 # pycon slidesa documentation build configuration file, created by
 # sphinx-quickstart2 on Mon Aug 13 17:03:44 2012.

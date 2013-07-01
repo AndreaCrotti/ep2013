@@ -1,1 +1,12 @@
 Notes from other talks and various ideas collected
+
+* TDD
+
+** TODO add distinction between integration and unit tests and when mocking comes into consideration
+
+** TODO add a way to set up correctly the whole flow in Emacs with the right setup hook
+
+* TODO propose a lighting talk about Emacs showing the whole configuration
+  - *from zero to intellisense* with Jedi and other libraries.
+  - show how to install things on a clean Emacs environment
+
