@@ -291,6 +291,9 @@ The idea is to *not forget cleanup actions*.
     
     with open('file.txt') as source:
          text = source.read()
+         # a lot
+         # more
+         # code
 
 Is equivalent to:
 
@@ -298,6 +301,9 @@ Is equivalent to:
 
     source = open('file.txt')
     text = source.read()
+    # a lot
+    # more
+    # code
     source.close()
 
 
