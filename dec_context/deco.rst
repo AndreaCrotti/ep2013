@@ -174,6 +174,9 @@ Back to memoization
 
 **Completely generic, memoize any recursive function**
 
+See *lru_cache* for a safer implementation:
+http://hg.python.org/cpython/file/8e838598eed1/Lib/functools.py
+
 Memoization unfolded
 ====================
 
