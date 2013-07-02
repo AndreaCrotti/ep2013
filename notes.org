@@ -16,3 +16,47 @@ Notes from other talks and various ideas collected
   - python-rex, to use Perl-like regex in Python easily (using a cache)
   - iktomi, something used to build web apps
   - getsentry, use the hosted version
+
+* Sentry
+ - doing business with a completely open source project
+ - don't try to compute with people hosting themselves
+ - try to minimize companies that are more a pain than anything else
+ - do the *project you love* and users will also love it
+
+* Disqus
+  - phabricator to view the diffs
+  - review that
+  - CI done by jenkins (before commited)
+  - push with GIT
+  - put all the commits in a daily deploy
+  - 0-8 daily deploys
+  django + celery + postgres + rabbit
+
+** Problems with current stack
+   - high concurrency
+   - need to isolate things
+   - isolate features (to fasten the loop)
+   - fun and experimentation
+   (nginx modules for example, or LUA)
+
+** Other interesting things
+   - use mixins (do only one thing)
+   Some libraries done by Disqus:
+   - django-mailviews
+   - nydus (for redis)
+   - gargoyle (for application switches)
+
+   SF jobs, seems interesting.
+
+*** TODO suggest a possible way to force the hooks
+
+* Static analysis
+ - tokenize module handles all the tokenization of things
+
+* Emacs show
+  Create a minimal working.
+  - auto completion with Jedi, and code navigation
+  - handling virtualenv
+  - git integration with magit
+  - running tests
+  - jumping to things easily

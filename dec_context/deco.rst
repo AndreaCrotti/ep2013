@@ -6,18 +6,18 @@
 .. even if they are just syntactic sugar they help a lot writing
 .. better and less code.
 
-.. The reason why I decided to give this talk is to try to demistify
-.. decorators and context managers, because they are not really so
-.. hard and they are widely used patterns in Python.
-
-
 Decorator
 =========
+.. TODO: use inline urls if possible
 
 A **decorator** is a function that takes a *function object* as
 argument, and returns a function object with an alterated behaviour.
 
-Decorators have been introduced in Python 2.4, (see decorator-history_).
+.. TODO: this is not quite the whole story because it can also take a
+   class for example.
+   So more in general it takes an instance
+
+Decorators have been introduced in Python 2.4 (see decorator-history_).
 
 .. TODO: remove the definition, and just show a nice example first
 
