@@ -10,3 +10,9 @@ Notes from other talks and various ideas collected
   - *from zero to intellisense* with Jedi and other libraries.
   - show how to install things on a clean Emacs environment
 
+
+* Interesting links
+  - [[https://tahoe-lafs.org/trac/tahoe-lafs][taohe-lafs]]
+  - python-rex, to use Perl-like regex in Python easily (using a cache)
+  - iktomi, something used to build web apps
+  - getsentry, use the hosted version

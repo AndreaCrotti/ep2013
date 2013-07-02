@@ -64,7 +64,7 @@ Shocking example
 .. And here we see a very simple first example of where a decorator
 .. might be useful.
 
-.. literalinclude:: ../code/deco/deco.py
+.. literalinclude:: code/deco.py
    :pyobject: fib
 
 ::
@@ -92,7 +92,7 @@ Hello decorator
 
 .. this is not what is supposed to do, should be in the right order
 
-.. literalinclude:: ../code/deco/deco.py
+.. literalinclude:: code/deco.py
    :pyobject: decorator
 
 
@@ -107,7 +107,7 @@ Which is simply syntactic sugar for:
 Simple example
 ==============
 
-.. literalinclude:: ../code/deco/deco.py
+.. literalinclude:: code/deco.py
    :pyobject: verbose
 
 
@@ -133,7 +133,7 @@ Why the _decorator?
 
 .. Can anyone see what's wrong with this?
 
-.. literalinclude:: ../code/deco/deco.py
+.. literalinclude:: code/deco.py
    :pyobject: naive_decorator
 
 .. The problem is that once we don
@@ -150,7 +150,7 @@ Back to memoization
 
 *memoize* caches the results of generic function calls.
 
-.. literalinclude:: ../code/deco/deco.py
+.. literalinclude:: code/deco.py
    :pyobject: memoize
 
 
@@ -175,7 +175,7 @@ Memoization unfolded
 Running in a forked process
 ===========================
 
-.. literalinclude:: ../code/deco/deco.py
+.. literalinclude:: code/deco.py
    :pyobject: on_forked_process
 
 .. TODO: add about
@@ -196,7 +196,7 @@ decorator?
 
 *Triple* function
 
-.. literalinclude:: ../code/deco/deco.py
+.. literalinclude:: code/deco.py
     :pyobject: param_deco    
 
 
@@ -205,14 +205,14 @@ Parametric decorator 2
 
 Or alternatively overriding the __call__ method.
 
-.. literalinclude:: ../code/deco/deco.py
+.. literalinclude:: code/deco.py
     :pyobject: call_decorator
 
 
 Parametric decorator 3
 ======================
 
-.. literalinclude:: ../code/deco/deco.py
+.. literalinclude:: code/deco.py
     :pyobject: retry_n_times
 
 
@@ -221,7 +221,7 @@ Class decorator
 
 Also a class is an object, and can be also decorator since python > 2.5.
 
-.. literalinclude:: ../code/deco/deco.py
+.. literalinclude:: code/deco.py
     :pyobject: class_decorator
 
 
@@ -237,7 +237,7 @@ Patching classes
 
 .. use mock.patch to show how to patch entire classes
 
-.. literalinclude:: ../code/deco/patch_class.py
+.. literalinclude:: code/patch_class.py
 
 Which applies the patch for all the methods found by *inspection*.
 
@@ -285,7 +285,7 @@ Is equivalent to:
 Implement __enter__ and __exit__
 ================================
 
-.. literalinclude:: ../code/deco/context.py
+.. literalinclude:: code/context.py
     :pyobject: TempFile
 
 Add that there can be an exception handling in the with.
@@ -322,7 +322,7 @@ until the end.
 Thanks
 ======
 
-.. figure:: ../images/questions.jpg
+.. figure:: img/questions.jpg
 
 Slides generated with hieroglyph_, and can be found on github_.
 
