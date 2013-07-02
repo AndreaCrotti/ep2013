@@ -4,9 +4,9 @@ from os import remove
 class TempFile:
     """Create a temporary file with the given content and remove it on exit
     """
-    def __init__(self, content=None):
+    def __init__(self, content=None, temp_path=None):
         self.content = content or ""
-        self.temp_file = mktemp()
+        self.temp_file = mktemp() if temp_path is None else temp_path
 
     def __enter__(self):
         with open(self.temp_file, 'w') as wr:

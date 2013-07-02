@@ -186,9 +186,22 @@ Memoization unfolded
     fib(4) + fib(3)
     (fib(3) + fib(2)) + (fib(2) + fib(1))
     ...
-    
-- *cache* is initially {}
-- fib(2) should be computed twice, but it's cached after first run
+
++-------+-----------------------------------+-----------------+
+| step# | call                              | cache           |
++-------+-----------------------------------+-----------------+
+|     1 | fib(4)                            | {}              |
++-------+-----------------------------------+-----------------+
+|     2 | fib(3) + fib(2)                   | {}              |
++-------+-----------------------------------+-----------------+
+|     3 | fib(2) + fib(1) + fib(2)          | {}              |
++-------+-----------------------------------+-----------------+
+|     4 | fib(1) + fib(0) + fib(1) + fib(2) | {}              |
++-------+-----------------------------------+-----------------+
+|     5 | 1 + 1 + fib(1) + fib(2)           | {fib((2, )): 2} |
++-------+-----------------------------------+-----------------+
+|     6 | 2 + 1 + 2                         | 5               |
++-------+-----------------------------------+-----------------+
 
 
 Parametric decorator 1
@@ -250,10 +263,6 @@ Which applies the patch for all the methods found by *inspection*.
 Context manager
 ===============
 
-.. TODO: Add an example about locks
-
-.. main idea is to keep track of the context
-
 Introduced in Python 2.5 with the with_statement_.
 
 A context manager is useful whenever you can split the actions in:
@@ -262,9 +271,16 @@ A context manager is useful whenever you can split the actions in:
 - action
 - teardown
 
-**Very common pattern**:
+::
 
-.. TODO: add something to use them in unit tests
+   try:
+       setup_action()
+       do_it()
+   except Error as e:
+       handle_error(e)
+   finally:
+       teardown()
+
 
 With statement
 ==============
@@ -336,23 +352,6 @@ until the end.
 
 
 .. TODO: this should be moved at the end of the decorator section maybe
-
-Don't overdo it
-===============
-
-What does this do?
-
-- order is important
-- debugging gets harder
-
-::
-
-    @app.post('/company/:company/challenge/:challenge_id/view')
-    @use_db
-    @require_json()
-    @is_permitted('VIEW_CHALLENGES')
-    def record_view(db, company, challenge_id, json):
-        pass
 
 
 Thanks

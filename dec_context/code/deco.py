@@ -28,14 +28,12 @@ def memoize(func, cache={}):
     def _memoize(*args, **kwargs):
         # create an hashable key for the cache dict
         key = (args, str(kwargs))
-        # check if result already in cache or add it
         if not key in cache:
             cache[key] = func(*args, **kwargs)
         else:
             print("Cache hit for key = %s" % str(key))
 
         return cache[key]
-
     return _memoize
 
 def fib(n):
