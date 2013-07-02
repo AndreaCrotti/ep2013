@@ -71,8 +71,8 @@ The @ decorator syntax for functions has been introduced in Python 2.4, and for 
 .. TODO: remove the definition, and just show a nice example first
 
 
-Hello decorator
-===============
+Shocking example
+================
 
 .. And here we see a very simple first example of where a decorator
 .. might be useful.
@@ -96,6 +96,7 @@ Hello decorator
 +-----+---------+--------------+---------+
 |  20 | 3780 μs | 1.21 μs      |3000x    |
 +-----+---------+--------------+---------+
+
 
 Hello decorator
 ===============
@@ -149,7 +150,9 @@ Why the _decorator?
 .. literalinclude:: code/deco.py
    :pyobject: naive_decorator
 
-.. The problem is that once we don
+.. The problem is that once we don't
+
+.. SHOW: show how to run the naive_decorator
 
 ::
    
@@ -187,17 +190,6 @@ Memoization unfolded
 - fib(2) should be computed twice, but it's cached after first run
 
 
-Running in a forked process
-===========================
-
-.. literalinclude:: code/deco.py
-   :pyobject: on_forked_process
-
-.. TODO: add about
-.. - chaining decorators
-.. - decorator nesting
-
-
 Parametric decorator 1
 ======================
 
@@ -233,8 +225,6 @@ Parametric decorator 3
 
 Class decorator
 ===============
-
-Also a class is an object, and can be also decorator since python > 2.5.
 
 .. literalinclude:: code/deco.py
     :pyobject: class_decorator
