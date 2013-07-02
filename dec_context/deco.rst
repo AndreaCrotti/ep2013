@@ -120,6 +120,30 @@ Which is simply syntactic sugar for:
     my_function = decorator(my_function)
 
 
+Why the _decorator?
+===================
+
+.. One question which I previously received is why do we actually need the _decorator?
+.. Why can't I just define it like this:
+
+.. Can anyone see what's wrong with this?
+
+.. literalinclude:: code/deco.py
+   :pyobject: naive_decorator
+
+
+::
+    
+   @naive_decorator
+   def my_function(): pass
+
+::
+   
+   my_function = naive_decorator(my_function)
+
+Here the function get **immediately executed!**, returning None
+
+
 Simple example
 ==============
 
@@ -140,27 +164,6 @@ Simple example
     Simple function
     Exiting function silly_func
 
-
-Why the _decorator?
-===================
-
-.. One question which I previously received is why do we actually need the _decorator?
-.. Why can't I just define it like this:
-
-.. Can anyone see what's wrong with this?
-
-.. literalinclude:: code/deco.py
-   :pyobject: naive_decorator
-
-.. The problem is that once we don't
-
-.. SHOW: show how to run the naive_decorator
-
-::
-   
-   my_function = naive_decorator(my_function)
-
-Here the function get **immediately executed!**, returning None
 
 
 Back to memoization
