@@ -6,20 +6,14 @@
 .. even if they are just syntactic sugar they help a lot writing
 .. better and less code.
 
-Decorator
-=========
-.. TODO: use inline urls if possible
+Twitter: @andreacrotti
 
-A **decorator** is a function that takes a *function object* as
-argument, and returns a function object with an alterated behaviour.
+Slides: https://github.com/AndreaCrotti/ep2013
 
-.. TODO: this is not quite the whole story because it can also take a
-   class for example.
-   So more in general it takes an instance
+Working for
 
-Decorators have been introduced in Python 2.4 (see decorator-history_).
-
-.. TODO: remove the definition, and just show a nice example first
+.. image:: img/wazoku.png
+   :height: 70
 
 
 Background
@@ -58,8 +52,25 @@ Background
     >>> func.func_code.co_code
     >>> 'd\x01\x00}\x02\x00d\x00\x00S'
 
-Shocking example
-================
+
+Decorator
+=========
+.. TODO: use inline urls if possible
+
+A **decorator** is a function that takes a *function object* as
+argument, and returns a function object with an alterated behaviour.
+
+.. TODO: this is not quite the whole story because it can also take a
+   class for example.
+   So more in general it takes an instance
+
+Decorators have been introduced in Python 2.4 (see decorator-history_).
+
+.. TODO: remove the definition, and just show a nice example first
+
+
+Hello decorator
+===============
 
 .. And here we see a very simple first example of where a decorator
 .. might be useful.
@@ -147,6 +158,8 @@ Here the function get **immediately executed!**, returning None
 
 Back to memoization
 ===================
+
+.. XXX: add a big disclaimer saying that 
 
 *memoize* caches the results of generic function calls.
 
