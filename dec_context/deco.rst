@@ -74,7 +74,7 @@ Shocking example
 .. And here we see a very simple first example of where a decorator
 .. might be useful.
 
-.. literalinclude:: code/deco.py
+.. literalinclude:: code/dec.py
    :pyobject: fib
 
 ::
@@ -103,7 +103,7 @@ Hello decorator
 
 .. this is not what is supposed to do, should be in the right order
 
-.. literalinclude:: code/deco.py
+.. literalinclude:: code/dec.py
    :pyobject: decorator
 
 
@@ -128,7 +128,7 @@ Why the _decorator?
 
 .. Can anyone see what's wrong with this?
 
-.. literalinclude:: code/deco.py
+.. literalinclude:: code/dec.py
    :pyobject: naive_decorator
 
 
@@ -147,7 +147,7 @@ Here the function get **immediately executed!**, returning None
 Simple example
 ==============
 
-.. literalinclude:: code/deco.py
+.. literalinclude:: code/dec.py
    :pyobject: verbose
 
 
@@ -173,7 +173,7 @@ Back to memoization
 
 *memoize* caches the results of generic function calls.
 
-.. literalinclude:: code/deco.py
+.. literalinclude:: code/dec.py
    :pyobject: memoize
 
 
@@ -223,7 +223,7 @@ How do I add arguments to a decorator?
 
 Double nested function:
 
-.. literalinclude:: code/deco.py
+.. literalinclude:: code/dec.py
     :pyobject: param_deco    
 
 
@@ -232,21 +232,21 @@ Parametric decorator 2
 
 Or alternatively overriding the __call__ method.
 
-.. literalinclude:: code/deco.py
+.. literalinclude:: code/dec.py
     :pyobject: call_decorator
 
 
 Parametric decorator 3
 ======================
 
-.. literalinclude:: code/deco.py
+.. literalinclude:: code/dec.py
     :pyobject: retry_n_times
 
 
 Class decorator
 ===============
 
-.. literalinclude:: code/deco.py
+.. literalinclude:: code/dec.py
     :pyobject: class_decorator
 
 
@@ -323,9 +323,6 @@ Implement __enter__ and __exit__
 
 Add that there can be an exception handling in the with.
 
-.. try:
-.. except:
-.. finally:
 
 Handling exceptions
 ===================
@@ -335,8 +332,9 @@ Handle yourself the exception raised!
 ::
 
     def __exit__(self, type, value, traceback):
+         return isinstance(value, TypeError)
 
-
+.. in the exit return True and the exception will be ignored
 
 
 Using contextlib

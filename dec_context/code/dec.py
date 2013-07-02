@@ -22,8 +22,15 @@ class retry_n_times:
 
         return _retry_n_times
 
-def failing_n_times(ntimes=3):
-    pass
+FAILED = 0
+
+def failing_n_times(nfails=3):
+    global FAILED
+    FAILED += 1
+    if nfails < FAILED:
+        print("Failed")
+    else:
+        print("Succeeded")
 
 
 def memoize(func, cache={}):
