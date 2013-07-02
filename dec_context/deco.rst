@@ -57,14 +57,11 @@ Decorator
 =========
 .. TODO: use inline urls if possible
 
-A **decorator** is a function that takes a *function object* as
-argument, and returns a function object with an alterated behaviour.
+In python a **decorator** is a function that takes a function (or a
+class) as argument, and returns a function (or a class) object with an
+altered behaviour.
 
-.. TODO: this is not quite the whole story because it can also take a
-   class for example.
-   So more in general it takes an instance
-
-Decorators have been introduced in Python 2.4 (see decorator-history_).
+The @ decorator syntax for functions has been introduced in Python 2.4, and for classes in Python 2.6 (see decorator-history_).
 
 .. TODO: remove the definition, and just show a nice example first
 
