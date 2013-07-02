@@ -51,7 +51,7 @@ def fib_memoized(n):
     return fib_memoized(n - 1) + fib_memoized(n - 2)
 
 
-print(fib_memoized(100))
+# print(fib_memoized(100))
 
 
 # two standard way to define a decorator
@@ -73,10 +73,10 @@ to_decorate = decorator(to_decorate)
 
 def param_deco(func):
     def _param_deco(arg1, arg2):
-         def __param_deco(*args, **kwargs):
-             pass
+        def __param_deco(*args, **kwargs):
+            pass
 
-         return __param_deco
+        return __param_deco
     return _param_deco
 
 
@@ -105,8 +105,8 @@ def class_decorator(cls):
 class C1:
     pass
 
-c = C1()
-print(c.new_meth())
+# c = C1()
+# print(c.new_meth())
 
 
 def on_forked_process(func):

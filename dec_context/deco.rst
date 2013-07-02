@@ -261,10 +261,7 @@ A context manager is useful whenever you can split the actions in:
 
 **Very common pattern**:
 
-- database connection
-- perforce connection
-- temporary environment
-
+.. TODO: add something to use them in unit tests
 
 With statement
 ==============
@@ -288,6 +285,8 @@ Is equivalent to:
 Implement __enter__ and __exit__
 ================================
 
+.. pay attention that this function is not thread safe!
+
 .. literalinclude:: code/context.py
     :pyobject: TempFile
 
@@ -296,6 +295,17 @@ Add that there can be an exception handling in the with.
 .. try:
 .. except:
 .. finally:
+
+Handling exceptions
+===================
+
+Handle yourself the exception raised!
+
+::
+
+    def __exit__(self, type, value, traceback):
+
+
 
 
 Using contextlib
@@ -321,6 +331,8 @@ until the end.
     
      '<H1>Title</H1>'
 
+
+.. TODO: this should be moved at the end of the decorator section maybe
 
 Don't overdo it
 ===============
