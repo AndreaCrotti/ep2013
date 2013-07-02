@@ -9,7 +9,6 @@ class retry_n_times:
         self.timeout = timeout
 
     def __call__(self, func):
-        @wraps(func)
         def _retry_n_times(*args, **kwargs):
             attempts = 0
             while attempts < self.ntimes:
@@ -22,6 +21,9 @@ class retry_n_times:
                 attempts += 1
 
         return _retry_n_times
+
+def failing_n_times(ntimes=3):
+    pass
 
 
 def memoize(func, cache={}):
@@ -72,7 +74,10 @@ to_decorate = decorator(to_decorate)
 def param_deco(func):
     def _param_deco(arg1, arg2):
         def __param_deco(*args, **kwargs):
-            pass
+            if arg1 == 'doit':
+                return func(*args, **kwargs)
+            else:
+                return None
 
         return __param_deco
     return _param_deco

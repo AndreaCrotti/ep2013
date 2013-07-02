@@ -214,15 +214,14 @@ Memoization unfolded
 Parametric decorator 1
 ======================
 
-Here is where things might get hairy, how do I add arguments to a
-decorator?
+How do I add arguments to a decorator?
 
 ::
 
     @deco(arg1="value", arg2=100)
     def function..
 
-*Triple* function
+Double nested function:
 
 .. literalinclude:: code/deco.py
     :pyobject: param_deco    
