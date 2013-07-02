@@ -8,11 +8,10 @@
 
 Twitter: @andreacrotti
 
-https://github.com/AndreaCrotti/ep2013
-
 .. image:: img/wazoku.png
    :height: 70
 
+https://github.com/AndreaCrotti/ep2013
 
 Background
 ==========
@@ -60,8 +59,8 @@ Decorator
 =========
 .. TODO: use inline urls if possible
 
-In python a **decorator** is a function that takes a function (or a
-class) as argument, and returns a function (or a class) object with an
+In python a **decorator** is a callable that takes a function (or a
+class) as argument, and returns a function (or a class) with an
 altered behaviour.
 
 The @ decorator syntax for functions has been introduced in Python 2.4, and for classes in Python 2.6 (see decorator-history_).
@@ -107,6 +106,11 @@ Hello decorator
 .. literalinclude:: code/deco.py
    :pyobject: decorator
 
+
+::
+
+    @decorator
+    def my_function(): pass
 
 Which is simply syntactic sugar for:
 
