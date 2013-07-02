@@ -343,12 +343,10 @@ What does this do?
 Thanks
 ======
 
-Twitter: @andreacrotti
-
 .. figure:: img/questions.jpg
 
-https://github.com/AndreaCrotti/ep2013
 @andreacrotti
+https://github.com/AndreaCrotti/ep2013
 
 .. notslides::
 
