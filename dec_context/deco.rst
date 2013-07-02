@@ -8,9 +8,7 @@
 
 Twitter: @andreacrotti
 
-Slides: https://github.com/AndreaCrotti/ep2013
-
-Working for
+https://github.com/AndreaCrotti/ep2013
 
 .. image:: img/wazoku.png
    :height: 70
@@ -327,14 +325,30 @@ until the end.
 Don't overdo it
 ===============
 
+What does this do?
+
+- order is important
+- debugging gets harder
+
+::
+
+    @app.post('/company/:company/challenge/:challenge_id/view')
+    @use_db
+    @require_json()
+    @is_permitted('VIEW_CHALLENGES')
+    def record_view(db, company, challenge_id, json):
+        pass
 
 
 Thanks
 ======
 
+Twitter: @andreacrotti
+
 .. figure:: img/questions.jpg
 
-Slides generated with hieroglyph_, and can be found on github_.
+https://github.com/AndreaCrotti/ep2013
+@andreacrotti
 
 .. notslides::
 
