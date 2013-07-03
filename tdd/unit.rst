@@ -258,22 +258,14 @@ Dependency injection
     :pyobject: test_report
 
 
-**UGLY**
+**UGLY** let's leave it to the Java guys.
 
 Any other solution?
 ===================
 
-- run-time name binding
-
 library.py:
 
 .. literalinclude:: code/library.py
-
-
-Dynamic Python 2
-================
-
-Rebinding names from other modules!
 
 prog.py:
 

@@ -1,8 +1,9 @@
 import library
 
-library.run_func()
-def failing():
-    print("In changed function")
+def dependent():
+    # the lib_func can be changed at run-time
+    print(library.lib_func())
 
-library.lib_func = failing
-library.run_func()
+dependent()
+library.lib_func = lambda: 42
+dependent()
