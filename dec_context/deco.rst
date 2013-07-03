@@ -207,14 +207,7 @@ Memoization unfolded
 Parametric decorator 1
 ======================
 
-How do I add arguments to a decorator?
-
-::
-
-    @deco(arg1="value", arg2=100)
-    def function..
-
-Double nested function:
+How do I parametrize a decorator?
 
 .. literalinclude:: code/dec.py
     :pyobject: param_deco    
@@ -223,10 +216,10 @@ Double nested function:
 Parametric decorator 2
 ======================
 
-Or alternatively overriding the __call__ method.
+Or alternatively overriding the *__call__* method.
 
 .. literalinclude:: code/dec.py
-    :pyobject: call_decorator
+    :pyobject: param_deco_class
 
 
 Parametric decorator 3
@@ -317,15 +310,16 @@ Implement __enter__ and __exit__
 Add that there can be an exception handling in the with.
 
 
-Handling exceptions
-===================
+..
+   Handling exceptions
+   ===================
 
-Handle yourself the exception raised!
+   Handle yourself the exception raised!
 
-::
+   ::
 
-    def __exit__(self, type, value, traceback):
-         return isinstance(value, TypeError)
+       def __exit__(self, type, value, traceback):
+            return isinstance(value, TypeError)
 
 .. in the exit return True and the exception will be ignored
 
@@ -342,9 +336,9 @@ until the end.
 
     @contextmanager
     def tag(name):
-        print "<%s>" % name
+        print("<%s>" % name)
         yield
-        print "</%s>" % name
+        print("</%s>" % name)
 
 ::
     

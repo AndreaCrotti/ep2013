@@ -3,7 +3,7 @@ from time import sleep
 from functools import wraps
 
 
-class retry_n_times:
+class retry_n_times(object):
     def __init__(self, ntimes=3, timeout=3):
         self.ntimes = ntimes
         self.timeout = timeout
@@ -85,14 +85,27 @@ def param_deco(doit=False):
                 print("Running function")
                 return f(*args, **kwargs)
             else:
-                print("Simulating f on input %s, %s" % (str(args), str(kwargs)))
-                return None
+                print("f on input %s, %s" % (str(args), str(kwargs)))
 
         return __param_deco
     return _param_deco
 
+class param_deco_class(object):
+    def __init__(self, doit=False):
+        self.doit = doit
 
-class call_decorator:
+    def __call__(self, func):
+        def _wrap(*args, **kwargs):
+            if self.doit:
+                print("Running function")
+                return f(*args, **kwargs)
+            else:
+                print("f on input %s, %s" % (str(args), str(kwargs)))
+
+        return _wrap
+    
+
+class call_decorator(object):
     def __init__(self, arg1, arg2):
         self.arg1 = arg1
         self.arg2 = arg2
@@ -114,7 +127,7 @@ def class_decorator(cls):
 
 
 @class_decorator
-class C1:
+class C1(object):
     pass
 
 # c = C1()
