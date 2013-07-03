@@ -356,10 +356,17 @@ TDD cycle
 .. show some examples of why these things can be bad (passing wrong types,
 .. raising things from anywhere and so on)
 
-Add a test
-==========
+Cycle
+=====
 
+.. rst-class:: build
 
+- Add a test
+- Watch it fail
+- Write some code
+- Run the test
+- Refactor
+- Add a test
 
 
 Make it fail
