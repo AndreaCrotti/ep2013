@@ -43,7 +43,7 @@ Dynamic language
 .. So more than enough rope to hang yourself!
 
 
-Python is **awesome**, but...
+Python is **awesome**, but:
 
 - duck typing
 - no checked exceptions
@@ -90,9 +90,8 @@ Misunderstanding
 .. string instead of a list of strings to a function that takes an
 .. iterable?
 
-.. Well thanks to duck typing it just threats the string as an
-.. iterable and gives you a result, which is most likely not the one
-.. you want!
+.. Well a string is also an iterable so it will just interpret the string
+.. as a list of characters, which is most likely not what we want.
 
 .. rst-class:: build
 
@@ -167,7 +166,11 @@ Change of perspective
 .. this question is much more valuable, because in the end you want to
 .. ship something that you can prove to be working.
 
-.. But programmers are lazy as you know
+.. But programmers are lazy, so what is the easiest thing that you can
+.. possibly test.
+
+.. Pure functions are the easiest thing to test, because they can be
+.. be simply described as a table of input-output.
 
 Not *how do I get this working?*, but **how do I test it?**
 
@@ -176,23 +179,6 @@ Not *how do I get this working?*, but **how do I test it?**
 - What is the easiest thing to test?
 
 *Functional core, imperative shell*
-
-Pure Functions
-==============
-
-.. We have a pure function whenever it returns always the same output
-.. for the same input, without changing anything in the global environment.
-
-.. The most stupid example can be the addition function.  The great
-.. thing is that pure functions are trivial to test.  The only thing
-.. you need to do is to write an input-output table of interesting
-.. couples to test and check all of them.
-.. Passing input X to function F will always return the same output Y.
-
-- adder(1, 2) = 3
-- adder(3, 4) = 7
-
-.. show how to test pure functions, in calc_one.py and calc_2.py
 
 
 Testing pure functions

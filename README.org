@@ -1,5 +1,7 @@
 Notes from other talks and various ideas collected
 
+* TODO find out how to do the rst-class: build correctly with Hierloglyph
+
 * TDD
 
 ** TODO add distinction between integration and unit tests and when mocking comes into consideration
