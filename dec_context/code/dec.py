@@ -78,12 +78,14 @@ def to_decorate():
 
 to_decorate = decorator(to_decorate)
 
-def param_deco(func):
-    def _param_deco(arg1, arg2):
+def param_deco(doit=False):
+    def _param_deco(f):
         def __param_deco(*args, **kwargs):
-            if arg1 == 'doit':
-                return func(*args, **kwargs)
+            if doit:
+                print("Running function")
+                return f(*args, **kwargs)
             else:
+                print("Simulating f on input %s, %s" % (str(args), str(kwargs)))
                 return None
 
         return __param_deco
