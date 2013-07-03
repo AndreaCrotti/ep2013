@@ -264,19 +264,21 @@ Introduced in Python 2.5 with the with_statement_.
 
 A context manager is useful whenever you can split the actions in:
 
-- set up
-- action
+- setup
+- body
 - teardown
 
-::
+.. TODO: this is what it should actually look like handling exceptions as well
+..
+   ::
 
-   try:
-       setup_action()
-       do_it()
-   except Error as e:
-       handle_error(e)
-   finally:
-       teardown()
+      try:
+          setup_action()
+          do_it()
+      except Error as e:
+          handle_error(e)
+      finally:
+          teardown()
 
 
 With statement
