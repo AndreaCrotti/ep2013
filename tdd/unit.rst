@@ -2,11 +2,6 @@
  TDD from scratch
 ==================
 
-
-.. First of all an introduction about myself, I'm not a great expert
-.. of Test Driven Development, because I started to do it properly
-.. only 6 month ago, so please correct me if I say something wrong.
-
 .. However, having worked with and without I really decided that I'm
 .. never going to do the mistake to work in another way anymore, and
 .. I'm also now doing pushing all the people around me to do the same.
@@ -83,6 +78,7 @@ Why
     
 .. literalinclude:: code/rare_cond.py
     :pyobject: smart_function
+
 
 Fail
 ====
@@ -163,7 +159,7 @@ Not a unit test
 Change of perspective
 =====================
 
-.. When you start to write your code with unit tests in mind, there is
+.. when you start to write your code with unit tests in mind, there is
 .. a big change of perspective.  The question is not anymore *how do I
 .. get this working*, but *how do I test it*?  And it turns out that
 .. this question is much more valuable, because in the end you want to
@@ -176,6 +172,8 @@ Not *how do I get this working?*, but **how do I test it?**
 .. image:: img/lazy.jpg
 
 - What is the easiest thing to test?
+
+*Functional core, imperative shell*
 
 Pure Functions
 ==============
@@ -281,7 +279,7 @@ Automate the Mocking process.
 
 **Every time you mock you do one step away from the real system**
 
-**Functional core, imperative shell**
+**Functional core imperative shell**
 
 
 Patching
@@ -443,6 +441,7 @@ Conclusion
 Resources
 =========
 
+.. _functional_core_imperative_shell: https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell
 .. _tip: http://lists.idyll.org/listinfo/testing-in-python
 .. _nose: https://nose.readthedocs.org/en/latest/
 .. _mock: http://www.voidspace.org.uk/python/mock/
@@ -453,5 +452,6 @@ Resources
 - nose_
 - mock_
 - coverage_
+- functional_core_imperative_shell_
 
 .. image:: img/questions.jpg

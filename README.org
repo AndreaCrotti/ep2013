@@ -137,3 +137,9 @@ https://www.getsentry.com/pricing/
   + django
   + django-jython
   + ..
+
+* Function annotation
+  - small metadata that can be added in the function definition
+  - PEP 3107 and Python 3.x only
+   def greet(name: str, age: int) -> str:
+
