@@ -356,6 +356,11 @@ TDD cycle
 .. show some examples of why these things can be bad (passing wrong types,
 .. raising things from anywhere and so on)
 
+Add a test
+==========
+
+
+
 
 Make it fail
 ============
@@ -387,6 +392,12 @@ Make it fail
         assert q.empty, "Queue is not empty in the beginning"
 
 
+
+Write code
+==========
+
+Run tests
+=========
 
 Refactoring example
 ===================
