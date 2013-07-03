@@ -1,0 +1,6 @@
+
+
+- yasnippet
+- jedi
+- auto-complete
+- 
