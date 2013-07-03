@@ -225,8 +225,8 @@ Depends on the global state -> side effect -> **hard to tests**
 .. TODO: where can I put this information somewhere?
 ..
 
-Avoiding side effects
-=====================
+More side effects
+=================
 
 .. This is another more meaningful example of what a side effect can be.
 .. This time the return value of the function depends on the function asctime,
@@ -287,41 +287,20 @@ Patching
 
 lib.py:
 
-::
-
-    from os import listdir
-    
-    def filter_dirs(pth):
-        for l in listdir(pth):
-            if 'x' in l:
-                yield l
+.. literalinclude:: code/patching/lib.py
     
 test_lib.py:
 
-::
+.. literalinclude:: code/patching/test_lib.py
+   :pyobject: TestLib
 
-    class TestLib(unittest.TestCase):
-        @patch('lib.listdir', new=lambda x: ['one', 'two', 'x'])
-        def test_filter_dirs(self):
-            res = list(lib.filter_dirs('.'))
-            self.assertEqual(len(res), 1)
 
 Mocking
 =======
 
 Mock the behaviour of an object that we don't want to run.
 
-::
-
-    class ComplexObject(object):
-        def method(self):
-            print("Very complex and expensive")
-    
-    
-    class Obj(object):
-        def __init__(self):
-            self.c = ComplexObject()
-            self.c.method()
+.. literalinclude:: code/mocking/complex.py
     
 ::
 
@@ -329,7 +308,6 @@ Mock the behaviour of an object that we don't want to run.
     @patch('lib.ComplexObject', new=fake_complex_object_auto)
     def test_obj(self):
         v = lib.Obj()
-
 
 
 TDD cycle
