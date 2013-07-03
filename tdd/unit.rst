@@ -63,7 +63,7 @@ Typo
 
 .. rst-class:: build
 
-.. code-block:: python
+::
    
     Traceback (most recent call last):
       File "rare_cond.py", line 21, in <module>
@@ -71,6 +71,7 @@ Typo
       File "rare_cond.py", line 7, in smart_function
         report_error(argO)
     NameError: global name 'argO' is not defined
+
     
 .. literalinclude:: code/rare_cond.py
     :pyobject: smart_function
@@ -124,9 +125,15 @@ Fail
 Unit test
 =========
 
-.. The good news though is that Python is really awesome for writing
-.. unit tests, (I even used it in the past to unit test java code with
-.. Jython for example).
+.. Well for me the consequence the only way to sleep at night
+.. given all these possible sources of disasters just behind the
+.. corner is to really be methodic about testing.
+
+.. And the good news though is that Python is really awesome for writing
+.. tests.
+
+.. In this talk I will only concentrate on unit testing even if the
+.. same principles apply for other things.
 
 .. A unit test is small, isolated, testing a very small part of the
 .. code.  When a test fail you would know the 5-lines range of code
@@ -172,7 +179,7 @@ Change of perspective
 .. Pure functions are the easiest thing to test, because they can be
 .. be simply described as a table of input-output.
 
-Not *how do I get this working?*, but **how do I test it?**
+*how do I hack it together* -> **How can I prove it works**
 
 .. image:: img/lazy.jpg
 
@@ -359,20 +366,7 @@ Make it fail
 
 - the test should fail if there is a bug
 
-::
-
-    class Queue(object):
-        def __init__(self):
-            self.queue = []
-    
-        def empty(self):
-            return self.queue == []
-    
-::
-
-    def test_queue_empty():
-        q = Queue()
-        assert q.empty, "Queue is not empty in the beginning"
+.. literalinclude:: code/passing_test.py
 
 
 Refactoring example
