@@ -25,6 +25,8 @@ Slides: https://github.com/AndreaCrotti/Unit-testing-talk
 Benefits
 ========
 
+.. TODO: make it a bit nicer
+
 .. If you have a good test coverage you will almost never need again
 .. to spend endless time with your debugger, trying to find out what's
 .. happened, because it will be very easy to know what can be the
