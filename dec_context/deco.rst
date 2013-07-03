@@ -239,8 +239,13 @@ Class decorator
 .. code::
 
     @class_decorator
-    class C1:
+    class C1(object):
         pass
+
+::
+
+   >>> C1().new_meth()
+   >>> 100
 
 
 Patching classes
