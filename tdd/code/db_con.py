@@ -1,7 +1,7 @@
 import MySQLdb
 
 
-class TestFetcher:
+class TestFetcher(object):
     def __init__(self):
         self.tests = self.fetch_from_db()
 

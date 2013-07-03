@@ -230,18 +230,17 @@ Side effects
 
 **Hard to test!!**
 
-Dependency injection
-====================
+Avoiding side effects
+=====================
 
 .. literalinclude:: code/dep_inj.py
     :lines: 1-6
 
-How do I remove the external dependency?
+**How do I test this??**
 
-*Dependency injection*
 
-Dependency injection 2
-======================
+Dependency injection
+====================
 
 .. literalinclude:: code/dep_inj.py
     :pyobject: ReportDep

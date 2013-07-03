@@ -15,3 +15,4 @@ class Obj(object):
     def __init__(self):
         self.c = ComplexObject()
         self.c.method()
+
