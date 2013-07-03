@@ -178,15 +178,19 @@ Not *how do I get this working?*, but **how do I test it?**
 
 - What is the easiest thing to test?
 
-*Functional core, imperative shell*
-
 
 Testing pure functions
 ======================
+
+.. this is the possibly most trivial example of something we can test.
+.. We have a mysum and mysubstract functions, and to test them we.
+
+.. We can even combine the two operations using some mathematical properties
+.. that we know should hold.
+
 .. literalinclude:: code/calc_1.py
     :lines: 1-16
 
-.. show examples from calc_1.py and calc_2.py
 
 Side effects
 ============
@@ -216,11 +220,18 @@ Side effects
      >>> funcs.silly_function(1)
      4
 
-**Hard to test!!**
+Depends on the global state -> side effect -> **hard to tests**
 
+.. TODO: where can I put this information somewhere?
+..
 
 Avoiding side effects
 =====================
+
+.. This is another more meaningful example of what a side effect can be.
+.. This time the return value of the function depends on the function asctime,
+.. which itself depends on a global external variable that is time.
+.. So how can we unit test this?
 
 .. literalinclude:: code/dep_inj.py
     :lines: 1-6
@@ -231,6 +242,15 @@ Avoiding side effects
 Dependency injection
 ====================
 
+.. TODO: find a good definition for dependency injection
+
+.. One possible way to solve this problem is to use dependency injection.
+.. Dependency injection is a technique that allows you to inject
+
+.. the problem with dependency injection is that it requires you
+.. to change the production code just to make it more easy to test,
+.. and not really adding any value to it.
+
 .. literalinclude:: code/dep_inj.py
     :pyobject: ReportDep
     
@@ -240,8 +260,8 @@ Dependency injection
 
 **UGLY**
 
-Dynamic Python
-==============
+Any other solution?
+===================
 
 - run-time name binding
 
