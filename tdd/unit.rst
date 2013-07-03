@@ -18,8 +18,6 @@ Twitter: @andreacrotti
 
 Slides: https://github.com/AndreaCrotti/Unit-testing-talk
 
-Working for http://www.wazoku.com/:
-
 .. image:: img/wazoku.png
    :height: 70
 

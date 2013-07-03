@@ -10,14 +10,10 @@ PAPEROPT_letter = -D latex_paper_size=letter
 ALLSPHINXOPTS   =  $(PAPEROPT_$(PAPER)) $(SPHINXOPTS)
 # the i18n builder cannot share the environment and doctrees with the others
 I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
-DROP = $(HOME)/Dropbox/Public/talks
 
-.PHONY: unit clean upload
+.PHONY: unit clean
 
-all: unit upload
-
-upload:
-	cp -Rv $(BUILDDIR) $(DROP)/
+all: unit
 
 unit:
 	$(SPHINXBUILD) -b slides $(ALLSPHINXOPTS) . $(BUILDDIR)
