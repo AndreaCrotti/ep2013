@@ -122,3 +122,18 @@ https://www.getsentry.com/pricing/
     Getting a list of keys for example blocks everything.
 
     *SQL is good*, don't replace it!
+
+
+
+* SPDY
+  Perché?
+  - più grafica
+  - più velocità
+  - applicazioni più interattive (angular / ember)
+
+  Ancora scrivendo usando HTTP/1.1 per scrivere applicazione (dal '99)
+  Django + SPDY
+
+  + django
+  + django-jython
+  + ..
