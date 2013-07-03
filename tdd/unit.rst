@@ -375,13 +375,6 @@ Make it fail
         assert q.empty, "Queue is not empty in the beginning"
 
 
-
-Write code
-==========
-
-Run tests
-=========
-
 Refactoring example
 ===================
 
