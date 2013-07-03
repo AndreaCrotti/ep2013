@@ -96,6 +96,7 @@ Misunderstanding
 
 .. rst-class:: build
 
+
 ::
 
     ['W', 'O', 'R', 'D', '1']
@@ -104,9 +105,13 @@ Misunderstanding
 
     >>> uppercase_words("word1")
 
+::
 
-.. literalinclude:: code/wrong.py
-    :pyobject: uppercase_words
+    def uppercase_words(words):
+        """Take a list of words and upper case them
+        """
+        return [w.upper() for w in words]
+
 
 Does not fails, but still clearly **wrong**
 
@@ -132,7 +137,8 @@ Unit test
 .. part of the code has to work
 
 .. The fast is really important actually, because for TDD you really
-.. need to run your tests continuosly, before every commit, and if you
+.. need to run your tests continuosly, possibly before every commit,
+   and if you
 .. start to have slow tests it will get too annoying very quickly.
 
 - small
@@ -225,6 +231,7 @@ Side effects
      4
 
 **Hard to test!!**
+
 
 Avoiding side effects
 =====================
@@ -330,13 +337,8 @@ Mock the behaviour of an object that we don't want to run.
 TDD cycle
 =========
 
-1. add a test, focusing on the *requirements*
-2. run the test to make it fail
-3. make it pass
-4. refactor
-5. back to 1
-
 .. image:: img/tdd.jpg
+   :align: center
 
 .. show an example of how this is done
 
@@ -419,6 +421,14 @@ Coverage 2
 .. literalinclude:: code/show_cov.py
    :pyobject: smart_division
 
+
+My setup
+========
+
+- *./run-tests.sh* runs all the unit test
+- *./run-tests.sh full* runs also the integration tests
+- *./coverage.sh* produces coverage report
+- .git/hooks/pre-commit -> $PROJECT/run-tests.sh
 
 Conclusion
 ==========
