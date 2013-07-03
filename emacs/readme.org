@@ -1,6 +1,6 @@
-
-
-- yasnippet
-- jedi
-- auto-complete
-- 
+To show:
+- [ ] yasnippet
+- [ ] jedi
+- [ ] auto-complete
+- [ ] flymake and pylint
+- [ ] compilation and running tests

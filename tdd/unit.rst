@@ -6,6 +6,21 @@
 .. never going to do the mistake to work in another way anymore, and
 .. I'm also now doing pushing all the people around me to do the same.
 
+.. Until probably one year ago I didn't write any unit test.
+.. My code kind of worked anyway, but I always had the feeling that
+   something was wrong.
+
+   I would spend hours debugging something really stupid and more importantly
+   I ended up solving the same bugs over and over.
+
+   Then I finally decided to force myself to learn how to do TDD and
+   what that actually means, and since then I never looked back.
+
+   The reason why I wanted to give this talk is mainly to give some
+   inspiration to other people.
+   (but that's enough chit chatting)
+
+
 **If it's not tested, it's broken**
 
 
@@ -17,35 +32,12 @@ Slides: https://github.com/AndreaCrotti/Unit-testing-talk
    :height: 70
 
 
-Benefits
-========
-
-.. TODO: make it a bit nicer
-
-.. If you have a good test coverage you will almost never need again
-.. to spend endless time with your debugger, trying to find out what's
-.. happened, because it will be very easy to know what can be the
-.. source.
-
-.. The last one seems exagerated but for me it was not.  When I had
-.. some code without tests and someone asked me if it worked, the best
-.. answer I could give is "it didn't fail yet", even if I thought
-.. the code was good.
-.. But I had no proof of what were the boundaries, I could only trust
-.. myself that I did a good job.
-
-- forget your debugger
-- write better code
-- only write what you need
-- *sleep at night*
-
-
 Dynamic language
 ================
 
-.. So Python is a great language, but it's also very dynamic and
-.. basically it only gives you runtime errors (except for syntax
-.. errors).  You can use some great tools like Pylint to get a much
+.. As we all know Python is a great language, but it's really dynamic
+   and it gives you only runtime errors.
+.. You can and should use some great tools like Pylint to get a much
 .. better static analysis but it's still far from what you can get
 .. from a less dynamic language.
 .. So more than enough rope to hang yourself!
@@ -55,15 +47,19 @@ Python is **awesome**, but...
 
 - duck typing
 - no checked exceptions
-- no compilation
+- no compilation errors
+
 
 .. image:: img/noose.jpg
+   :align: center
 
-Why
-===
+Typo
+====
 .. Here for example I have this function that under some rare
 .. condition would fail
 .. Can you see any problem with it?
+
+.. Probably not because it's very hard to spot.
 
 .. rst-class:: build
 
@@ -86,8 +82,8 @@ Fail
 .. image:: img/testing-goat.jpg
    :scale: 150%
     
-Why 2
-=====
+Misunderstanding
+================
 
 .. Here is another example from my personal experience, I actually got
 .. bitten many times by this.  What happens if you pass by mistake a
