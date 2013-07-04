@@ -26,4 +26,4 @@ def long_crappy_function():
     cursor = dbc.cursor(MySQLdb.cursors.DictCursor)
 
     for r in res:
-       cursor.execute('INSERT INTO table VALUES (%s)' % r)
+        cursor.execute('INSERT INTO table VALUES (%s)' % r)
