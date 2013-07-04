@@ -433,8 +433,14 @@ Conclusion
    :width: 300
 
 
-Resources
-=========
+Questions?
+==========
+
+Twitter: @andreacrotti
+Slides: https://github.com/AndreaCrotti/Unit-testing-talk
+
+.. image:: img/wazoku.png
+   :height: 70
 
 .. _functional_core_imperative_shell: https://www.destroyallsoftware.com/screencasts/catalog/functional-core-imperative-shell
 .. _tip: http://lists.idyll.org/listinfo/testing-in-python
@@ -448,5 +454,3 @@ Resources
 - mock_
 - coverage_
 - functional_core_imperative_shell_
-
-.. image:: img/questions.jpg
