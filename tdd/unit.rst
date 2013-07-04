@@ -298,6 +298,21 @@ Mocking
 - **Functional core imperative shell**
 
 
+Mock objects
+============
+
+Mock the behaviour of an object that we don't want to run.
+
+.. literalinclude:: code/mocking/complex.py
+    
+::
+
+    fake_complex_object_auto = Mock(autospec=lib.ComplexObject)
+    @patch('lib.ComplexObject', new=fake_complex_object_auto)
+    def test_obj(self):
+        v = lib.Obj()
+
+
 Patching
 ========
 
@@ -310,20 +325,6 @@ test_lib.py:
 .. literalinclude:: code/patching/test_lib.py
    :pyobject: TestLib
 
-
-Mocking
-=======
-
-Mock the behaviour of an object that we don't want to run.
-
-.. literalinclude:: code/mocking/complex.py
-    
-::
-
-    fake_complex_object_auto = Mock(autospec=lib.ComplexObject)
-    @patch('lib.ComplexObject', new=fake_complex_object_auto)
-    def test_obj(self):
-        v = lib.Obj()
 
 
 TDD cycle
@@ -415,6 +416,7 @@ Coverage 2
 My setup
 ========
 
+- tests/unit, tests/integration, tests/performance...
 - *./run-tests.sh* runs all the unit test
 - *./run-tests.sh full* runs also the integration tests
 - *./coverage.sh* produces coverage report
