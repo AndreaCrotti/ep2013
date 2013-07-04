@@ -161,3 +161,17 @@ https://www.getsentry.com/pricing/
       __metaclass__ = DebugMeta
 
    __builtin__.object = new_object
+
+* Large scale applications
+  > 100k lines of code
+
+  - easy to write big applications
+  - faster to write
+  - no lock-in
+  - be ahead of the game and react to customer
+   
+  Typical scenario:
+  + complex interactions
+  + complex work concepts
+
+** Zeon of application design
