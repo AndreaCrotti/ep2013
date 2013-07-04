@@ -20,6 +20,8 @@
    inspiration to other people.
    (but that's enough chit chatting)
 
+.. What I want to make sure you'll get is the foundation of unit testing
+.. and how it really works.
 
 **If it's not tested, it's broken**
 
@@ -249,7 +251,9 @@ More side effects
 Dependency injection
 ====================
 
-.. TODO: find a good definition for dependency injection
+.. Dependency injection is a software design pattern that allows the
+   removal of hard-coded dependencies and makes it possible to change
+   them, whether at run-time or compile-time.[1]
 
 .. One possible way to solve this problem is to use dependency injection.
 .. Dependency injection is a technique that allows you to inject
@@ -282,11 +286,16 @@ prog.py:
 Mocking
 =======
 
-Automate the Mocking process.
+.. luckily we don't need to do all this by ourselves, I just wanted
+.. to show that there is nothing particularly magic in this
+.. library but it 
 
-**Every time you mock you do one step away from the real system**
+.. image:: img/mocking.jpg
+   :align: center
 
-**Functional core imperative shell**
+- Automate this fiddling process
+- Every time you mock you do one step away from the real system
+- **Functional core imperative shell**
 
 
 Patching

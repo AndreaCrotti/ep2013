@@ -20,8 +20,8 @@ def long_crappy_function():
         if 'to-match' in line:
             res.append(line)
 
-    dbc = MySQLdb.connect(host='host', user='user', 
+    dbc = MySQLdb.connect(host='host', user='user',
                           passwd='passwd', port='port')
     cursor = dbc.cursor(MySQLdb.cursors.DictCursor)
     for r in res:
-       cursor.execute('INSERT INTO table VALUES (%s)' % r)
+        cursor.execute('INSERT INTO table VALUES (%s)' % r)
