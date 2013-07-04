@@ -28,7 +28,7 @@
 
 Twitter: @andreacrotti
 
-Slides: https://github.com/AndreaCrotti/Unit-testing-talk
+Slides: https://github.com/AndreaCrotti/ep2013
 
 .. image:: img/wazoku.png
    :height: 70
@@ -437,7 +437,7 @@ Questions?
 ==========
 
 Twitter: @andreacrotti
-Slides: https://github.com/AndreaCrotti/Unit-testing-talk
+Slides: https://github.com/AndreaCrotti/ep2013
 
 .. image:: img/wazoku.png
    :height: 70
