@@ -146,3 +146,18 @@ https://www.getsentry.com/pricing/
    def greet(name: str, age: int) -> str:
 
   - rightarrow, nice library that defines a language to define types
+
+* Useful libraries
+- pyenv
+- gorun
+
+* Metaclasses
+
+  change the behaviour of *all* the possible objects!  Getting a
+  different behaviour from all the classes that subclass object from
+  now on.
+
+  class new_object(object):
+      __metaclass__ = DebugMeta
+
+   __builtin__.object = new_object
