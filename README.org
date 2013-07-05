@@ -175,3 +175,22 @@ https://www.getsentry.com/pricing/
   + complex work concepts
 
 ** Zeon of application design
+   - only use objects for everything (and no primitives like dictionaries and tuples)
+   - different modules should not store any state!
+   - use a request.context object to carry the information around in the system
+
+* Elasticsearch
+  - query will return what matches and the score about the match
+  - use a filter unless you really need a query
+  "multi_match": ..."title^10", "body" (^10 boost the field title to
+  make it more important)
+
+  Using a parent-child relationship to get faster a result from ES.
+
+
+* TODO change the keyboard layout to italian
+
+* Continuos integration
+
+- use travis, bamboo or something like this
+  that sets you up well enough out of the box
