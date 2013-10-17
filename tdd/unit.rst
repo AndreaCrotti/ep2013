@@ -456,3 +456,12 @@ Slides: https://github.com/AndreaCrotti/ep2013
 - mock_
 - coverage_
 - functional_core_imperative_shell_
+
+(that last is also available in the shape of two PyCon talks,
+`Fast Test, Slow Test
+<https://www.youtube.com/watch?v=RAxiiRPHS9k>`_ 
+and
+`Boundaries
+<https://www.youtube.com/watch?v=eOYal8elnZk>`_
+although you should absolutely subscribe to DAS as well. Consider it a taster.
+)
