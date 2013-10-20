@@ -21,9 +21,9 @@
 
 **If it's not tested, it's broken**
 
+Andrea Crotti, Harry Percival
 
-Twitter: @andreacrotti
-
+Twitter: @andreacrotti, @hjwp
 Slides: https://github.com/AndreaCrotti/ep2013
 
 .. image:: img/wazoku.png
