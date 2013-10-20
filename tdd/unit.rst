@@ -37,8 +37,8 @@ Outline
 - Pure functions vs side effects
 - Fighting side effects
 
-  + dependency injection
-  + Mocking/patching
+  + Dependency injection
+  + Patching
 
 - TDD cycle
 - Test coverage
@@ -54,11 +54,13 @@ Dynamic language
 .. So more than enough rope to hang yourself!
 
 
-Python is **awesome**, but:
+Python is **awesome**, but
+
+.. TODO: add a unicode skull or something similar instead
 
 - duck typing
 - no checked exceptions
-- no compilation errors
+- no compilation errors == 
 
 
 .. image:: img/noose.jpg
