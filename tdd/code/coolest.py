@@ -3,9 +3,10 @@ import re
 import sys
 from collections import defaultdict
 from random import randint
+MIN_RANK, MAX_RANK = -100, 100
 
 # write the ranks after
-RANKS = defaultdict(lambda: randint(-100, 100))
+RANKS = defaultdict(lambda: randint(MIN_RANK, MAX_RANK))
 RANKS.update({
     'python': 100,
     'php': -100,
@@ -35,8 +36,12 @@ class TestLanguages(unittest.TestCase):
 
     def test_dont_care_about_other_languages(self):
         self.assertIn(best_programming_language(['c', 'd']), ['c', 'd'])
+
+    @unittest.expectedFailure
+    def test_c_always_wins(self):
+        r = RANKS['c']
         self.assertEqual(best_programming_language(['c', 'd']), 'c')
 
 # Local Variables:
-# compile-command: "python -m unittest coolest"
+# compile-command: "cd /home/andrea/projects/talks/ep2013/tdd/code/ && python -m unittest coolest"
 # End:
