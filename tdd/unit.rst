@@ -312,14 +312,9 @@ Mock objects
 
 Mock the behaviour of an object that we don't want to run.
 
-.. literalinclude:: code/mocking/complex.py
-    
-::
+.. literalinclude:: code/patching/simple.py
 
-    fake_complex_object_auto = Mock(autospec=lib.ComplexObject)
-    @patch('lib.ComplexObject', new=fake_complex_object_auto)
-    def test_obj(self):
-        v = lib.Obj()
+.. literalinclude:: code/patching/test_simple.py
 
 
 Patching
