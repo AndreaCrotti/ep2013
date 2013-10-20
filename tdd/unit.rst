@@ -332,14 +332,8 @@ test_lib.py:
    :pyobject: TestLib
 
 
-
-TDD cycle
-=========
-
-.. image:: img/tdd.jpg
-   :align: center
-
-.. show an example of how this is done
+Cycle
+=====
 
 .. Write the test:
 .. Being able to write the tests before writing the code means that we
@@ -355,16 +349,12 @@ TDD cycle
 .. show some examples of why these things can be bad (passing wrong types,
 .. raising things from anywhere and so on)
 
-Cycle
-=====
-
 .. rst-class:: build
 
 - Add a test
 - Watch it fail
-- Write some code
-- Run the test
-- Refactor
+- Make it pass
+- Refactor (if possible)
 - Add a test
 
 
