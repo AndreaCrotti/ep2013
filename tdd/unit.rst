@@ -197,7 +197,7 @@ Change of perspective
 .. Pure functions are the easiest thing to test, because they can be
 .. be simply described as a table of input-output.
 
-*how do I hack it together* -> **How can I prove it works**
+**How can I prove it works**
 
 .. image:: img/lazy.jpg
 
@@ -314,15 +314,16 @@ Mocking
 - **Functional core imperative shell**
 
 
-Mock objects
+Mock methods
 ============
 
 Mock the behaviour of an object that we don't want to run.
 
 .. literalinclude:: code/patching/simple.py
+   :pyobject: MyObject
 
 .. literalinclude:: code/patching/test_simple.py
-
+   :pyobject: TestSimple
 
 Patching
 ========
@@ -330,7 +331,7 @@ Patching
 lib.py:
 
 .. literalinclude:: code/patching/lib.py
-    
+
 test_lib.py:
 
 .. literalinclude:: code/patching/test_lib.py
