@@ -27,7 +27,12 @@ Slides: https://github.com/AndreaCrotti/ep2013/tdd
 
 .. image:: img/wazoku.png
    :height: 70
+ 
+We are hiring!
+==============
 
+.. image:: img/we_want_you.jpg
+    :width: 800
 
 Outline
 =======
