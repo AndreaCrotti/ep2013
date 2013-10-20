@@ -55,7 +55,7 @@ Python is **awesome**, but
 
 - duck typing
 - no checked exceptions
-- no compilation errors == 
+- no compilation errors
 
 
 .. image:: img/noose.jpg
