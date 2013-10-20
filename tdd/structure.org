@@ -1,5 +1,7 @@
 Plot behind the unit testing talk
 
+* TODO write a better introduction and better conclusions from the talk
+
 * TODO find some other talks about unit testing and take some material
 
 * TODO add an example of how to debug a small program that has tests and one that doesn't have tests.

@@ -1,5 +1,6 @@
 import unittest
 from mock import patch
+unittest.defaultTestLoader
 
 import lib
 

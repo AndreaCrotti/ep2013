@@ -2,10 +2,6 @@
  TDD from scratch
 ==================
 
-.. However, having worked with and without I really decided that I'm
-.. never going to do the mistake to work in another way anymore, and
-.. I'm also now doing pushing all the people around me to do the same.
-
 .. Until probably one year ago I didn't write any unit test.
 .. My code kind of worked anyway, but I always had the feeling that
    something was wrong.
@@ -229,7 +225,7 @@ Side effects
      >>> funcs.silly_function(1)
      4
 
-Depends on the global state -> side effect -> **hard to tests**
+Depends on the global state -> side effect -> **hard to test**
 
 .. TODO: where can I put this information somewhere?
 ..
@@ -457,11 +453,14 @@ Slides: https://github.com/AndreaCrotti/ep2013
 - coverage_
 - functional_core_imperative_shell_
 
-(that last is also available in the shape of two PyCon talks,
-`Fast Test, Slow Test
-<https://www.youtube.com/watch?v=RAxiiRPHS9k>`_ 
-and
-`Boundaries
-<https://www.youtube.com/watch?v=eOYal8elnZk>`_
-although you should absolutely subscribe to DAS as well. Consider it a taster.
-)
+..
+   (that last is also available in the shape of two PyCon talks,
+   `Fast Test, Slow Test
+   <https://www.youtube.com/watch?v=RAxiiRPHS9k>`_ 
+   and
+   `Boundaries
+   <https://www.youtube.com/watch?v=eOYal8elnZk>`_
+   although you should absolutely subscribe to DAS as well. Consider it a taster.
+   )
+
+
