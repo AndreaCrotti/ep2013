@@ -2,22 +2,12 @@
  TDD from scratch
 ==================
 
-.. Until probably one year ago I didn't write any unit test.
-.. My code kind of worked anyway, but I always had the feeling that
-   something was wrong.
+.. Hi everyone, I'm Andrea Crotti, I work for a web startup in London and we
+   built a SAAS platform for idea management.
 
-   I would spend hours debugging something really stupid and more importantly
-   I ended up solving the same bugs over and over.
+   I decided to give this talk because TDD really change the way I worked and made my life better, so I wanted to share the joy with you.
+   So I hope at end of this talk I will have convinced some of you to try it out if you haven't already.
 
-   Then I finally decided to force myself to learn how to do TDD and
-   what that actually means, and since then I never looked back.
-
-   The reason why I wanted to give this talk is mainly to give some
-   inspiration to other people.
-   (but that's enough chit chatting)
-
-.. What I want to make sure you'll get is the foundation of unit testing
-.. and how it really works.
 
 **If it's not tested, it's broken**
 
@@ -408,8 +398,12 @@ As simple as:
 
 *nosetests show_cov.py --with-cov --cov-report=html*
 
-Coverage 2
-==========
+Coverage
+========
+
+.. Something very interesting happened the other day while I was looking at this code again.
+.. I wrote this code long time ago using Python2 and now I wanted to run everything with Python3, and noticed that one of the lines was not getting executed even if all the tests where running.
+.. Only then I remembered that in Python3 the division is float by default, but the great thing is that I remembered that just by looking at the test coverage.
 
 .. literalinclude:: code/show_cov.py
    :pyobject: smart_division
