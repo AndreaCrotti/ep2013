@@ -33,6 +33,7 @@ class TestLanguages(unittest.TestCase):
 
     def test_javascript_better_than_php(self):
         self.assertEqual(best_programming_language(['php', 'javascript']), 'javascript')
+
     def test_passing_uppercase_string_works(self):
         self.assertEqual(best_programming_language(['Php', 'Python', 'javascript']), 'python')
 
