@@ -30,6 +30,20 @@ Slides: https://github.com/AndreaCrotti/ep2013
    :height: 70
 
 
+Outline
+=======
+
+- Why bother?
+- Unit tests
+- Pure functions vs side effects
+- Fighting side effects
+
+  + dependency injection
+  + Mocking/patching
+
+- TDD cycle
+- Test coverage
+
 Dynamic language
 ================
 
