@@ -3,6 +3,8 @@ import unittest
 LANGUAGES = ['php', 'javascript', 'python']
 
 class Ranking(dict):
+    """Dictionary supporting lower/upper case access
+    """
     def __getitem__(self, item):
         return super(Ranking, self).__getitem__(item.lower())
 
