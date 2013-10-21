@@ -130,6 +130,9 @@ Fail
    :scale: 150%
 
 
+.. TODO: should I move the unit test slides to after the change of
+   perspective maybe?
+
 Unit test
 =========
 
