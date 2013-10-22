@@ -447,6 +447,17 @@ Selenium testing
 - Demo!
 
 
+Usual complaints
+================
+
+.. rst-class:: build
+
+- it slows me down
+  Do you want to release working code?
+
+- it's hard to test/I don't know how to do it
+  Maybe your code is hard to test?
+
 Conclusion
 ==========
 
