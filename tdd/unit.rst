@@ -317,7 +317,7 @@ Mocking
 - **Functional core imperative shell**
 
 
-Mock methods
+Mock objects
 ============
 
 Mock the behaviour of an object that we don't want to run.
@@ -341,8 +341,8 @@ test_lib.py:
    :pyobject: TestLib
 
 
-Cycle
-=====
+TDD Cycle
+=========
 
 .. Write the test:
 .. Being able to write the tests before writing the code means that we
@@ -365,6 +365,7 @@ Cycle
 - Make it pass
 - Refactor (if possible)
 - Add a test
+- ...
 
 
 Make it fail
