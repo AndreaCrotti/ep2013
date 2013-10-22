@@ -26,7 +26,7 @@ Book: http://wwww.obeythetestinggoat.com
 We are hiring!
 ==============
 
-.. image:: img/we_want_you.jpg
+.. image:: img/hiring.jpg
     :width: 800
 
 Outline
