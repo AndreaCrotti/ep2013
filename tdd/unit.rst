@@ -15,7 +15,12 @@ Andrea Crotti (@andreacrotti), Harry Percival (@hjwp)
 
 Slides: https://github.com/AndreaCrotti/ep2013/tdd
 
+Book: http://wwww.obeythetestinggoat.com
+
 .. image:: img/wazoku.png
+   :height: 70
+
+.. image:: img/goat_book_cover.gif
    :height: 70
  
 We are hiring!
@@ -174,6 +179,11 @@ Not a unit test
 .. put some values into a database.
 
 .. literalinclude:: code/not_unit.py
+
+.. Andrea, if you like, I can come in here and say a few words about 
+.. the difference between unit tests, integration  tests, functional
+.. tests, what you can use each one for.
+
 
 Change of perspective
 =====================
@@ -420,6 +430,21 @@ My setup
 - *./run-tests.sh full* runs also the integration tests
 - *./coverage.sh* produces coverage report
 - .git/hooks/pre-commit -> $PROJECT/run-tests.sh
+
+
+Selenium testing
+================
+
+- "functional" aka "acceptance" aka "E2E" aka "full stack" aka "black box" aka "big" tests
+- come a long way since days of v.1. webdriver works v. well
+- firefox / chrome / ie / phantomjs / android / ios
+- only real way of testing javascript / 3rd-part client-side plugins
+- in our (very particular) case, *these are the only tests that find unexpected bugs*
+- http://www.PythonAnywhere.com/ - full test suite takes 6 hours.
+- ways of alleviating the problem -- not every use case needs a selenium/browser test.
+- lots more info in my book!  http://wwww.obeythetestinggoat.com
+- Demo!
+
 
 Conclusion
 ==========
